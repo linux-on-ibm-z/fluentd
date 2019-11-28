@@ -13,9 +13,10 @@ matrix:
 #      os: linux
 #    - rvm: 2.2.10
 #      os: linux-ppc64le
-    - rvm: 2.2.10
+    - rvm: 2.5.5
       os: linux
       arch: s390x
+      dist: xenial
 #    - rvm: 2.4.6
  #     os: linux
  #   - rvm: 2.4.6
