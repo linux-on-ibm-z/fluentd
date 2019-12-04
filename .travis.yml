@@ -28,7 +28,7 @@ matrix:
     - rvm: 2.6.3
       os: linux
       arch: s390x
-      dist: bionic      
+      dist: xenial      
 #    - rvm: ruby-head
 #      os: linux
 #    - rvm: ruby-head
@@ -36,7 +36,7 @@ matrix:
     - rvm: ruby-head
       os: linux
       arch: s390x
-      dist: bionic    
+      dist: xenial    
 #    - rvm: 2.1.10
 #      os: osx
 #      osx_image: xcode8.3 # OSX 10.12
@@ -70,7 +70,7 @@ branches:
 before_install:
   - gem update --system=2.7.8
 
-sudo: required
+sudo: false
 dist: trusty # for TLSv1.2 support
 
 addons:
