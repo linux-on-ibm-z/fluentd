@@ -70,7 +70,7 @@ branches:
 before_install:
   - gem update --system=2.7.8
 
-sudo: false
+sudo: required
 dist: trusty # for TLSv1.2 support
 
 addons:
