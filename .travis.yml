@@ -25,11 +25,14 @@ matrix:
 #      dist: xenial
     - rvm: 2.6.3
       os: linux
-      dist: xenial 
-    - rvm: 2.6.3
+    - rvm: 2.6.5
       os: linux
       arch: s390x
-      dist: trusty      
+      dist: bionic   
+    - rvm: 2.5.7
+      os: linux
+      arch: s390x
+      dist: xenial 
 #    - rvm: ruby-head
 #      os: linux
 #    - rvm: ruby-head
