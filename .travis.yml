@@ -3,7 +3,9 @@ cache: bundler
 
 # script: bundle exec rake test TESTOPTS=-v
 script: 
-    - travis_wait 20 bundle exec rake test
+    - bundle exec rake test
+    - ps -ef 
+    - sleep 20
     - ps -ef 
 
 # http://rubies.travis-ci.org/
@@ -16,24 +18,24 @@ matrix:
 #      os: linux
 #    - rvm: 2.2.10
 #      os: linux-ppc64le
-#    - rvm: 2.4.6
-#      os: linux
-#    - rvm: 2.4.6
-#      os: linux-ppc64le
-#    - rvm: 2.5.5
-#      os: linux
-#    - rvm: 2.5.5
-#      os: linux
-#      arch: s390x
-#      dist: xenial
+    - rvm: 2.4.6
+      os: linux
+    - rvm: 2.4.6
+      os: linux-ppc64le
+    - rvm: 2.5.5
+      os: linux
+    - rvm: 2.5.5
+      os: linux
+      arch: s390x
+      dist: xenial
     - rvm: 2.6.3
       os: linux
     - rvm: 2.6.3
       os: linux
       arch: s390x
       dist: bionic    
-#    - rvm: ruby-head
-#      os: linux
+    - rvm: ruby-head
+      os: linux
 #    - rvm: ruby-head
 #      os: linux-ppc64le
     - rvm: ruby-head
