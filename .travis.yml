@@ -2,6 +2,7 @@ language: ruby
 cache: bundler
 
 # script: bundle exec rake test TESTOPTS=-v
+script: bundle exec rake 
 
 # http://rubies.travis-ci.org/
 # See here for osx_image -> OSX versions: https://docs.travis-ci.com/user/languages/objective-c
@@ -25,14 +26,10 @@ matrix:
 #      dist: xenial
     - rvm: 2.6.3
       os: linux
-    - rvm: 2.6.5
+    - rvm: 2.6.3
       os: linux
       arch: s390x
-      dist: bionic   
-    - rvm: 2.5.7
-      os: linux
-      arch: s390x
-      dist: xenial 
+      dist: bionic    
 #    - rvm: ruby-head
 #      os: linux
 #    - rvm: ruby-head
